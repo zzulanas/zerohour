@@ -1,0 +1,131 @@
+<html>
+  <head>
+    <title>Shop - Zero Hour</title>
+    <meta name="description" content="" />
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../assets/css/main.css" type="text/css" />
+    <link href="../assets/css/hamburgers.css" rel="stylesheet" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.0.2/js/all.js"
+    ></script>
+    <script
+      src="https://code.jquery.com/jquery-3.2.1.min.js"
+      integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <!-- BANNER -->
+
+    <div id="banner">
+      <div class="nav-items">
+        <img class="nav-logo" src="../img/home/Asset 1.svg" />
+        <h1 id="banner-logo">Zero Hour</h1>
+      </div>
+      <div class="nav-items nav-right">
+        <h1><a href="../">Home</a></h1>
+        <h1><a href="../miami/">Miami</a></h1>
+        <h1><a href="../who-we-are/">Who We Are</a></h1>
+        <h1><a href="../our-actions">Our Actions</a></h1>
+        <h1><a href="../our-platform">Our Platform</a></h1>
+        <h1><a href="../donate">Donate</a></h1>
+        <h1><a href="../shop/">Shop</a></h1>
+        <h1><a href="../media">Media</a></h1>
+        <button class="hamburger hamburger--spin exit" type="button">
+          <span class="hamburger-box">
+            <span class="hamburger-inner"></span>
+          </span>
+        </button>
+      </div>
+    </div>
+
+    <div class="menu-overlay">
+      <div class="menu-items">
+        <h1><a href="../">Home</a></h1>
+        <h1><a href="../who-we-are/">Who We Are</a></h1>
+        <h1><a href="../our-actions">Our Actions</a></h1>
+        <h1><a href="../our-platform">Our Platform</a></h1>
+        <h1><a href="../donate">Donate</a></h1>
+        <h1><a href="../shop/">Shop</a></h1>
+        <h1><a href="../media">Media</a></h1>
+      </div>
+    </div>
+
+    <!-- PAGE -->
+    <div>
+      <div class="video-container">
+          <video autoplay loop muted>
+              <source src="../img/twominslow.mp4" type="video/mp4">
+            </video>
+      </div>
+      <section class="video-content">
+          <div class="margin-8-4">
+              <h1 class="font-size-5em center black uppercase" style="font-family: Norwester;">This is Zero Hour: <br/> The Youth Climate Summit</h1>
+              <h2 class="font-size-3em center red uppercase" style="font-family: Norwester;">July 12-14 2019 <br/> Miami, FL</h2>
+            </div>
+
+            <div class="width-60">
+              <h2 class="font-size-3em black-red">
+                  A year after the historic youth climate march, the youth strike again! Join Zero Hour in This Is Zero Hour: The Youth Climate Summit in Miami, a frontline community.
+
+                  The Summit will be held from July 12 – 14 at DoubleTree by Hilton Hotel Miami Airport & Convention Center, 711 NW 72nd Avenue, Miami, FL 33126.
+                  
+              </h2>
+            <h2 class=" font-size-2em black-red" style="padding-top: 40px;">
+              Registration will be open soon! 					<a href="https://actionnetwork.org/forms/subscribe-to-zero-hour" target="_blank"
+            >Subscribe to Email Updates</a> to get notified when registration opens.
+            </h2>
+          </div>
+
+          <div class="width-60">
+            <p style="padding-top: 20px;" class="black-red">
+                Interested in donating? Your monetary support will ensure that youth activists can participate in events and continue organizing to make sure that youth voices are heard loud and clear! 
+
+            </p>
+              <p style="text-align: center;">
+                <a href="https://actionnetwork.org/fundraising/zero-hour-youth-climate-action"
+                class="button-primary button-red" target="_blank" style="display: inline-block;">Donate or Partner</a></p>
+
+                <p class="black-red">
+                    We would also love to accept in-kind donations of resources you or your organization may be able to give. For instance—houses and living spaces in Miami to host young activists for our day of action, cars and other means of transportation, resources and supplies for training and workshops we host. We promise we’ll put every dollar to good use! Please reach out to us at info@thisiszerohour.org if you want to donate any of the above items or other resources.
+                </p>
+
+                <p class="black-red">
+                    If you are an organization interested in partnering, please contact <a href="mailto:Arielle@thisiszerohour.org">Arielle@thisiszerohour.org</a>.
+                    For media inquires, contact <a href="mailto:media@thisiszerohour.org">media@thisiszerohour.org</a>
+                    For general inquiries, contact <a href="mailto:info@thisiszerohour.org">info@thisiszerohour.org</a>
+                    
+                </p>
+          </div>
+        </section>
+    </div>
+
+
+    <script>
+        $('a[href^="#"]').click(function () {
+          $("html, body").animate(
+            {
+              scrollTop: $(
+                '[name="' + $.attr(this, "href").substr(1) + '"]'
+              ).offset().top
+            },
+            500
+          );
+          return false;
+        });
+      </script>
+    
+      <!-- MENU SCRIPT -->
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+      <script src="../assets/js/menu.js"></script>
+    
+      <!-- SUBSCRIBE SCRIPT -->
+      <link href="https://actionnetwork.org/css/style-embed-whitelabel-v3.css" rel="stylesheet" type="text/css" />
+      <script src="https://actionnetwork.org/widgets/v3/form/subscribe-to-zero-hour?format=js&source=widget"></script>
+  </body>
+</html>
