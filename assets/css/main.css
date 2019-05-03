@@ -1514,8 +1514,8 @@ SOURCE: https://codepen.io/EvyatarDa/pen/waKXMd
 }
 
 .video-content {
-	background-color: white;
-	color: #fe3e00;
+	position: absolute;
+
 	padding: 20px;
 	font-size: 70px;
 	margin-top: 300px;
