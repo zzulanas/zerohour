@@ -862,7 +862,7 @@ h3.padding-bottom-025em {
 		position: relative;
 		width: 100%;
 		margin: 0;
-		text-align: left;
+		text-align: center;
 	}
 
 	.team-thumb {
@@ -987,6 +987,7 @@ h3.padding-bottom-025em {
 			-webkit-transition: all 0.1s ease-out;
 			-ms-transition: all 0.1s ease-out;
 			transition: all 0.1s ease-out;
+			max-width: 300px;
 		}
 
 			.logo-gallery img:hover {
@@ -1228,7 +1229,7 @@ SOURCE: https://codepen.io/EvyatarDa/pen/waKXMd
 		display: flex;
 		top: 0;
 		left: 0;
-		justify-content: flex-end;
+		justify-content: space-between;
 		align-content: center;
 		height: 2em;
 		width: 100%;
@@ -1243,8 +1244,8 @@ SOURCE: https://codepen.io/EvyatarDa/pen/waKXMd
 	}
 
 	.nav-logo {
+		margin-top: 0px;
 		height:100%;
-		padding-right: 5px;
 		width: auto;
 	}
 
@@ -1254,12 +1255,17 @@ SOURCE: https://codepen.io/EvyatarDa/pen/waKXMd
 		justify-content: flex-start;
 	} 
 
+	.nav-cont {
+		max-width: 200px;
+	}
+
+
 	.nav-right {
-		margin-left: auto;
 		align-items: center;
 	}
 
 		/* Banner Link Transitions */
+		
 		#banner a:before {
 			content: "";
 			position: absolute;
@@ -1289,20 +1295,21 @@ SOURCE: https://codepen.io/EvyatarDa/pen/waKXMd
 			text-decoration: none;
 		}
 
+
 		#banner #banner-logo {
 			font-size: 30;
 			font-family: 'RIVERHACK';
 		}
 
-		@media screen and (max-width: 600px) {
-			#banner a{display: none;}
+		@media screen and (max-width: 1110px) {
+			.nav-right a{display: none;}
 			#banner a.icon {
 				float: right;
 				display: block;
 			}
 		}
 
-		@media screen and (min-width: 600px) {
+		@media screen and (min-width: 1110px) {
 			#banner button{
 				display: none;
 			}
@@ -1416,7 +1423,7 @@ SOURCE: https://codepen.io/EvyatarDa/pen/waKXMd
 			color: #fff;
 		}
 
-		.credit:hover {
+		.credit a:hover {
 			opacity: 1;
 		}
 
@@ -1528,6 +1535,80 @@ SOURCE: https://codepen.io/EvyatarDa/pen/waKXMd
 	}
 }
 
+/* shopping item css */
+.shopping-card {
+	box-shadow: 0 8px 12px 0 rgba(0, 0, 0, 0.2);
+	display: flex;
+	flex-direction: column;
+	overflow-wrap: break-word;
+	justify-content: space-evenly;
+	max-width: 200px;
+	border-radius: 5px;
+	margin: 20px;
+	padding: 15px;
+  text-align: center;
+	font-family: arial;
+	top: 0;
+  transition: box-shadow ease 0.5s;
+}
+
+.shopping-price {
+  color: grey;
+	font-size: 22px;
+	flex-grow: 1;
+}
+
+.shopping-card button {
+	border: none;
+	align-self: flex-end;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #fe3e00;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.shopping-card button {
+	border: none;
+	align-self: flex-end;
+  outline: 0;
+  padding: 12px;
+  color: white;
+  background-color: #fe3e00;
+  text-align: center;
+  cursor: pointer;
+  width: 100%;
+  font-size: 18px;
+}
+
+.shopping-card form {
+	margin: 0px;
+}
+
+.shopping-card button:disabled{
+	opacity: 0.6;
+	background-color: #000;
+}
+
+.shopping-card:hover {
+	box-shadow: 0 16px 24px 0 rgba(0, 0, 0, 0.2);	
+}
+
+.shopping-card img{
+	max-width: 200px;
+	max-height: 200px;
+}
+
+.shopping-items{
+	display: flex;
+	flex-wrap: wrap;
+	margin: 12%;
+}
+
+
 .effect8
 {
 	-webkit-box-shadow: -6px 24px 29px -2px rgba(0,0,0,0.41);
@@ -1535,4 +1616,49 @@ SOURCE: https://codepen.io/EvyatarDa/pen/waKXMd
 	box-shadow: -6px 24px 29px -2px rgba(0,0,0,0.41);
 }
 
+.sponsor-div {
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+    grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+  grid-template-rows: auto auto;
+}
 
+.sponsor-div a{
+    display: flex;
+    justify-content: center;
+  align-items: center;
+  max-height: 200px;
+}
+
+.sponsor-div img{
+    grid-column-start: 2;
+  grid-column-end: five;
+  grid-row-start: row1-start;
+    grid-row-end: 3;
+    transition: all 0.2s ease;
+    max-width: 150px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
+}
+
+.sponsor-div img:hover {
+    transform: scale(1.3);
+    -webkit-filter: grayscale(0%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(0%);
+}
+
+
+.chapter-content {
+	position: absolute;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	top:300px;
+	z-index: 3;
+}
+
+.chapter-container {
+	background-size: cover;
+	text-align: center;
+}

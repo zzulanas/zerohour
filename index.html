@@ -8,25 +8,38 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 	<link rel="stylesheet" href="./assets/css/main.css" type="text/css" />
 	<link href="assets/css/hamburgers.css" rel="stylesheet">
+	<link rel="icon" href="./img/home/Zero Hour Logo.png"/>
 	<link href="https://use.fontawesome.com/releases/v5.0.6/css/all.css" rel="stylesheet" />
+	<link rel="stylesheet" href="./assets/css/tingle.min.css">
 	<script src="https://code.jquery.com/jquery-3.2.1.min.js"
 		integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-126337007-2"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'UA-126337007-2');
+	</script>
 </head>
 
 <body>
+	<div class="tingle-content-wrapper">
 	<!-- BANNER -->
 
-	<div id="banner">
-		<div class="nav-items">
-			<img class="nav-logo" src="img/home/Asset 1.svg">
-			<h1 id="banner-logo">Zero Hour</h1>
+	<div id="banner" >
+		<div class="nav-cont">
+			<a class="nav-logo" href="/">
+			<img class="nav-logo" src="img/ZH-Nav_logo.png">
+			</a>
 		</div>
 		<div class="nav-items nav-right">
-			<h1><a href="../">Home</a></h1>
 			<h1><a href="../miami/">Miami</a></h1>
 			<h1><a href="../who-we-are/">Who We Are</a></h1>
 			<h1><a href="../our-actions">Our Actions</a></h1>
 			<h1><a href="../our-platform">Our Platform</a></h1>
+			<h1><a href="../chapters">Chapters</a></h1>
 			<h1><a href="../donate">Donate</a></h1>
 			<h1><a href="../shop/">Shop</a></h1>
 			<h1><a href="../media">Media</a></h1>
@@ -45,11 +58,15 @@
 			<h1><a href="../who-we-are/">Who We Are</a></h1>
 			<h1><a href="../our-actions">Our Actions</a></h1>
 			<h1><a href="../our-platform">Our Platform</a></h1>
+			<h1><a href="../chapters">Chapters</a></h1>
 			<h1><a href="../donate">Donate</a></h1>
 			<h1><a href="../shop/">Shop</a></h1>
 			<h1><a href="../media">Media</a></h1>
 		</div>
 	</div>
+
+	<!-- MODAL -->
+
 
 	<!-- PAGE -->
 
@@ -148,7 +165,14 @@
 				</a>
 			</div>
 		</div>
+		  
+		<div class="credit">
+			Web design by <a href="http://jonathonreed.com/freelancing" target="_blank">Original Story Design Co.</a> and <a href="https://zzulanas.com">Zach Zulanas</a>
+		  </div>
+	  
 	</section>
+
+</div>
 
 	<!-- SCROLL SCRIPT -->
 	<script>
@@ -167,9 +191,11 @@
 
 	<!-- MENU SCRIPT -->
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+	<script src="https://unpkg.com/micromodal/dist/micromodal.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
 	<script src="./assets/js/menu.js"></script>
-
+	<script src="./assets/js/tingle.min.js"></script>
+	<script src='./assets/js/modal.js'></script>
 	<!-- SUBSCRIBE SCRIPT -->
 	<link href="https://actionnetwork.org/css/style-embed-whitelabel-v3.css" rel="stylesheet" type="text/css" />
 	<script src="https://actionnetwork.org/widgets/v3/form/subscribe-to-zero-hour?format=js&source=widget"></script>
